@@ -2,7 +2,7 @@ import datetime
 
 def display_current_datetime():
     current_date = datetime.datetime.now()
-    return f"Current date and time: {current_date}"
+    return f"The current date is: {current_date}"
 
 today = display_current_datetime()
 print(today)
