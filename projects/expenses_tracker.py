@@ -6,4 +6,23 @@ def user_CLI_menu():
 
 user_CLI_menu()
 
+#This class defines the transcation, it is further inheritated by other classes
+
+class Transactions:
+    #constructor
+    def __init__(self, amount, type, category, description):
+        self.amount = amount
+        self.type = type
+        self.category =category
+        self.discription = description
+        
+    #method
     
+class Add_transaction(Transactions):
+    def __init__(self, amount, type, category, description):
+        super().__init__(amount, type, category, description)
+        
+    def prompt_user_to_add_transaction(self):
+         pass
+        
+        

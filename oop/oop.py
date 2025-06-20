@@ -1,9 +1,15 @@
 #class is the blueprint of creating objects
 #Objects are instance/ occurence of class
 class Sport:
-    pass
+    rules = []
+    is_indoor = False
+    #methods shows the action/ behaviour of the objects
+    def play():
+        print()
 class Person:
-    pass
+    name =""
+    age = 20
+    family =""
 class Farm:
     pass
 
