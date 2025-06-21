@@ -1,11 +1,17 @@
+from book_class import Book
 
-from item import Item
-from phone import Phone
+def main():
+    # Creating an instance of Book
+    my_book = Book("1984", "George Orwell", 1949)
 
-item1 = Item('Phone', 750, 20)
+    # Demonstrating the __str__ method
+    print(my_book)  # Expected to use __str__
 
-item1.name = 'Samsung'
+    # Demonstrating the __repr__ method
+    print(repr(my_book))  # Expected to use __repr__
 
-item1.apply_increment(0.2)
+    # Deleting a book instance to trigger __del__
+    del my_book
 
-print(item1.price)
+if __name__ == "__main__":
+    main()
